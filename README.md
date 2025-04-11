@@ -1,7 +1,7 @@
 # 📝 NoteIt – A Beautiful Minimal Desktop Notes App
 
-![NoteIt Screenshot](screenshots/noteit-preview.png)
-![NoteIt Editor](screenshots/noteit-editor.png)
+![NoteIt Screenshot](noteit-preview.png)
+![NoteIt Editor](noteit-editor.png)
 
 NoteIt is a minimal offline desktop note-taking app built using **Electron.js**. It features:
 - ✨ Smooth animations
