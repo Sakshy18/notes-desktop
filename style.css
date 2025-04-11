@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  width: 400px;
+  height: 550px;
+  padding: 0;
+  background: url('assets/pixelated-bg.jpg') center/cover no-repeat;
+  background-color: #ffeaf5;
+  font-family: 'Press Start 2P', cursive;
+  /* image-rendering: pixelated; */
+}
+
+.window {
+  width: 400px;
+  height: 550px;
+  border: 2px solid #E97CAE;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  margin-top: 4px;
+  box-shadow: 0 0 10px #ffb6c1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffeef1;
+  padding: 8px 12px;
+  border-bottom: 1px solid #E97CAE;
+  -webkit-app-region: drag;
+}
+
+.title {
+  color: #D73974;
+  font-size: 12px;
+}
+
+.window-buttons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.notes-container {
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.note-card {
+    background-color: #E97CAE;
+    border: 3px solid #fee6f2;
+    margin-bottom: 12px;
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    box-shadow: inset 3px 2px 0px rgb(255, 255, 255), inset -3px -4px 0px rgb(0, 0, 0);
+}
+  
+
+.note-card:hover {
+  transform: scale(1.02);
+  
+}
+
+.note-text p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.note-text span {
+  font-size: 8px;
+  color: #fff;
+}
+
+.note-actions img {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.note-actions img:hover {
+  transform: scale(1.2);
+}
+
+
+.heart-icon-button{
+    width: 14px;
+    height: 14px;
+}
+
+.icon-button-title{
+    width: 18px;
+    height: 18px;
+}
+
+.icon-button:active {
+  transform: scale(0.9);
+}
+
+.new-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mascot {
+  width: 80px;
+  animation: floaty 2s ease-in-out infinite;
+  margin-bottom: -9px;
+}
+
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+#newNoteBtn {
+  background-color: #FFA8D0;
+  border: 3px solid #000000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#newNoteBtn:hover {
+  transform: scale(1.05);
+  background-color: #E97CAE;
+}
+
+.notes-container {
+    transition: opacity 0.3s ease;
+  }
+  
+  .notes-container.fade-out {
+    opacity: 0;
+  }
+  
+  .notes-container.fade-in {
+    opacity: 1;
+  }
+  

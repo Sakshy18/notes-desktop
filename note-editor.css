@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #d2d8f6, #f9dae2, #fef5c3);
+  font-family: 'Press Start 2P', cursive;
+}
+
+.editor-window {
+  width: 400px;
+  height: 550px;
+  border: 2px solid #E97CAE;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  margin-top: 4px;
+  box-shadow: 0 0 10px #ffb6c1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.editor-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffeef1;
+  padding: 8px 12px;
+  border-bottom: 1px solid #E97CAE;
+}
+
+.editor-title {
+  color: #D73974;
+  font-size: 12px;
+}
+
+.heart-icon-button {
+  width: 14px;
+  height: 14px;
+}
+
+.editor-window-buttons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.icon-button-title:active {
+  transform: scale(0.9);
+}
+
+/* Writing Area */
+.editor-pad {
+  padding: 10px;
+  flex: 1;
+  
+}
+
+.editor-textarea {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+      url('assets/pixelated-inner-bg.jpg') center/cover no-repeat;
+  
+    border: 3px solid #eaa4c5;
+    border-radius: 8px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+
+/* Save Button */
+.editor-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .editor-save-btn,
+  .editor-back-btn {
+    background-color: #FFA8D0;
+    border: 3px solid #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .editor-save-btn:hover,
+  .editor-back-btn:hover {
+    transform: scale(1.05);
+    background-color: #E97CAE;
+  }
+
+  .save-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffd1ec;
+    color: #600046;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+  }
+  .save-popup.show {
+    opacity: 1;
+  }
+  

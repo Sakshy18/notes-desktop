@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Note It 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    hi this is a pixelated desktop application for notes app
+  <div class="window">
+
+    <div class="title-bar">
+      <span class="title">Note It <img src="assets/heart.png" class="heart-icon-button"></span>
+
+      <div class="window-buttons">
+        <img src="assets/minus.png" alt="Minimize" class="icon-button-title" id="minimizeBtn">
+        <img src="assets/cross.png" alt="Close" class="icon-button-title" id="closeBtn">
+      </div>
+    </div>
+
+
+    <div class="notes-container">
+     
+    </div>
+
+  
+    <div class="new-note">
+      <img src="assets/cat.png" alt="Mascot" class="mascot" />
+      <button id="newNoteBtn">New Note ＋</button>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+  <script src="renderer.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note It 💖</title>
+  <link rel="stylesheet" href="note-editor.css">
+</head>
+<body>
+  <div class="editor-window">
+    
+    <div class="editor-title-bar">
+      <span class="editor-title">
+        Note It <img src="assets/heart.png" class="heart-icon-button">
+      </span>
+
+      <div class="editor-window-buttons">
+        <img src="assets/minus.png" alt="Minimize" class="icon-button-title" id="minimizeBtn">
+        <img src="assets/cross.png" alt="Close" class="icon-button-title" id="closeBtn">
+      </div>
+    </div>
+
+
+    <div class="editor-pad">
+      <textarea placeholder="Once Upon A Time There Was A Girl..." class="editor-textarea"></textarea>
+    </div>
+
+  
+    <div class="editor-buttons">
+      <button class="editor-back-btn">← Back</button>
+      <button class="editor-save-btn" id="saveBtn">
+        Save <img src="assets/save.png" alt="Save">
+      </button>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+  <script src="editor.js"></script>
+  <div id="savePopup" class="save-popup">Saved!</div>
+
+</body>
+</html>
